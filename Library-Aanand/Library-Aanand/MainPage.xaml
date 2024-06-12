@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Library_Aanand.MainPage"
+              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             >
+    
+
+
+    <StackLayout  Margin="10,280,10,0">
+        
+        <Label Text="Login"  FontSize="Large" HorizontalTextAlignment="Center" Margin="0,0,0,20" FontAttributes="Bold"/>
+
+        <Entry x:Name="usernameinput" Placeholder="Enter username" Margin="0,0,0,10"/>
+        <Entry IsPassword="True" x:Name="passwordinput" Placeholder="Enter password" Keyboard="Numeric"  Margin="0,0,0,10"/>
+
+        <Button Text="Login" Clicked="Login_Button_Clicked"  TextColor="Blue" BorderColor="Blue" BorderWidth="2" BackgroundColor="Transparent" />
+
+        <Label Text=""  FontSize="25" IsVisible="false" Margin="0,10,0,0" Padding="10,5,0,5"   
+         BackgroundColor="#FFBBC4"  TextColor="Red" x:Name="labelerrormsg"/>
+
+
+    </StackLayout>
+
+</ContentPage>
